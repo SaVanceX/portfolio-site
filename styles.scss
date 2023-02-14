@@ -24,6 +24,11 @@ body {
       justify-content: space-around;
       width: 100%;
       list-style-type: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

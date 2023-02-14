@@ -25,4 +25,8 @@ body nav ul {
   justify-content: space-around;
   width: 100%;
   list-style-type: none;
+}
+body nav ul a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
