@@ -24,4 +24,5 @@ body nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  list-style-type: none;
 }/*# sourceMappingURL=styles.css.map */
