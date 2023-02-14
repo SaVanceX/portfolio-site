@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(66, 66, 66);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body header {
+  background-color: rgb(51, 178, 167);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 12;
+  width: 100%;
+  top: 0;
+}
+body nav {
+  background-color: blueviolet;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+body nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
