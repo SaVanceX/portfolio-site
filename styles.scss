@@ -1,3 +1,50 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: #{$screen+"px"}) {
+    @content;
+  }
+}
+
 body {
   background-color: rgb(66, 66, 66);
   margin: 0;
@@ -12,22 +59,49 @@ body {
     z-index: 12;
     width: 100%;
     top: 0;
-  }
 
-  nav {
-    background-color: blueviolet;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    ul {
+    nav {
+      background-color: blueviolet;
+      width: 50%;
       display: flex;
-      justify-content: space-around;
-      width: 100%;
-      list-style-type: none;
+      align-items: center;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        list-style-type: none;
 
-      a {
-        color: white;
-        text-decoration: none;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .main-menu {
+        @include rwd(0) {
+          display: none;
+        }
+        @include sm {
+          display: block;
+        }
+      }
+
+      .mobile-menu {
+        span {
+          background-color: whitesmoke;
+          display: block;
+          width: 33px;
+          height: 4px;
+          margin-bottom: 5px;
+        }
+
+        @include rwd(0) {
+          display: block;
+        }
+
+        @include sm {
+          display: none;
+        }
       }
     }
   }
@@ -77,3 +151,5 @@ body {
     height: 100vh;
   }
 }
+
+// Breakpoints
