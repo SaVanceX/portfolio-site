@@ -45,7 +45,7 @@ body header nav .mobile-menu span {
   display: block;
   width: 33px;
   height: 4px;
-  margin-bottom: 5px;
+  transform-origin: center;
 }
 @media (min-width: 0px) {
   body header nav .mobile-menu {
@@ -56,6 +56,29 @@ body header nav .mobile-menu span {
   body header nav .mobile-menu {
     display: none;
   }
+}
+body header nav .mobile-menu .remove-span {
+  opacity: 0;
+  transition: opacity 0.3s ease-out 0.1s;
+}
+body header nav .mobile-menu .add-span {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s;
+}
+body header nav .rotate-45 {
+  transform: translate(10px, 9px) rotate(45deg);
+  transition: transform 0.3s ease 0.5s;
+  margin-bottom: 0;
+}
+body header nav .span-0 {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease 0.5s;
+  margin-bottom: 5px;
+}
+body header nav .rotate-135 {
+  transform: translate(10px, -3px) rotate(135deg);
+  transition: transform 0.3s ease 0.5s;
+  margin-bottom: 0;
 }
 body #about {
   height: 100vh;
