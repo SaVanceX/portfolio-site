@@ -1,28 +1,38 @@
 // mobile-menu element
 const mobileMenu = document.querySelector("div");
+const firstMenuBar = mobileMenu.children[0];
+const secondMenuBar = mobileMenu.children[1];
+const thirdMenuBar = mobileMenu.children[2];
+
+// handle open and close of moblile menu
+const addClass = (menubar, classname) => {
+  return menubar.classList.add(classname);
+};
+
+const removeClass = (menubar, classname) => {
+  return menubar.classList.remove(classname);
+};
+
+let isOpen = false;
 mobileMenu.addEventListener("click", function () {
-  // mobileMenu.children[1].classList.add("remove-span");
-  if (!mobileMenu.children[1].classList.contains("remove-span")) {
-    mobileMenu.children[1].classList.add("remove-span");
-    mobileMenu.children[1].classList.remove("add-span");
-  } else if (mobileMenu.children[1].classList.contains("remove-span")) {
-    mobileMenu.children[1].classList.add("add-span");
-    mobileMenu.children[1].classList.remove("remove-span");
-  }
+  isOpen = !isOpen;
+  if (isOpen) {
+    console.log("Open Menu");
+    addClass(firstMenuBar, "rotate-45");
+    addClass(secondMenuBar, "remove-span");
+    addClass(thirdMenuBar, "rotate-135");
 
-  if (!mobileMenu.children[0].classList.contains("rotate-45")) {
-    mobileMenu.children[0].classList.add("rotate-45");
-    mobileMenu.children[0].classList.remove("span-0");
+    removeClass(firstMenuBar, "span-0");
+    removeClass(secondMenuBar, "add-span");
+    removeClass(thirdMenuBar, "span-0");
   } else {
-    mobileMenu.children[0].classList.add("span-0");
-    mobileMenu.children[0].classList.remove("rotate-45");
-  }
+    console.log("Close Menu");
+    addClass(firstMenuBar, "span-0");
+    addClass(secondMenuBar, "add-span");
+    addClass(thirdMenuBar, "span-0");
 
-  if (!mobileMenu.children[2].classList.contains("rotate-135")) {
-    mobileMenu.children[2].classList.add("rotate-135");
-    mobileMenu.children[0].classList.remove("span-0");
-  } else {
-    mobileMenu.children[2].classList.add("span-0");
-    mobileMenu.children[2].classList.remove("rotate-135");
+    removeClass(firstMenuBar, "rotate-45");
+    removeClass(secondMenuBar, "remove-span");
+    removeClass(thirdMenuBar, "rotate-135");
   }
 });

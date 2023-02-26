@@ -19,6 +19,7 @@ body header nav {
   width: 50%;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 body header nav ul {
   display: flex;
@@ -40,7 +41,7 @@ body header nav ul a {
     display: block;
   }
 }
-body header nav .mobile-menu span {
+body header nav .hamburger-menu span {
   background-color: whitesmoke;
   display: block;
   width: 33px;
@@ -48,22 +49,22 @@ body header nav .mobile-menu span {
   transform-origin: center;
 }
 @media (min-width: 0px) {
-  body header nav .mobile-menu {
+  body header nav .hamburger-menu {
     display: block;
   }
 }
 @media (min-width: 576px) {
-  body header nav .mobile-menu {
+  body header nav .hamburger-menu {
     display: none;
   }
 }
-body header nav .mobile-menu .remove-span {
+body header nav .hamburger-menu .remove-span {
   opacity: 0;
   transition: opacity 0.3s ease-out 0.1s;
 }
-body header nav .mobile-menu .add-span {
+body header nav .hamburger-menu .add-span {
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.5s;
+  transition: opacity 0.3s ease-in 0.1s;
 }
 body header nav .rotate-45 {
   transform: translate(10px, 9px) rotate(45deg);
@@ -79,6 +80,12 @@ body header nav .rotate-135 {
   transform: translate(10px, -3px) rotate(135deg);
   transition: transform 0.3s ease 0.5s;
   margin-bottom: 0;
+}
+body .mobile-menu {
+  background: antiquewhite;
+  z-index: 20;
+  position: fixed;
+  top: 10vh;
 }
 body #about {
   height: 100vh;
