@@ -1,8 +1,11 @@
 // mobile-menu element
-const mobileMenu = document.querySelector("div");
-const firstMenuBar = mobileMenu.children[0];
-const secondMenuBar = mobileMenu.children[1];
-const thirdMenuBar = mobileMenu.children[2];
+const hamburgerMenu = document.querySelector("div.hamburger-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+console.log(mobileMenu);
+const firstMenuBar = hamburgerMenu.children[0];
+const secondMenuBar = hamburgerMenu.children[1];
+const thirdMenuBar = hamburgerMenu.children[2];
 
 // handle open and close of moblile menu
 const addClass = (menubar, classname) => {
@@ -14,7 +17,7 @@ const removeClass = (menubar, classname) => {
 };
 
 let isOpen = false;
-mobileMenu.addEventListener("click", function () {
+hamburgerMenu.addEventListener("click", function () {
   isOpen = !isOpen;
   if (isOpen) {
     console.log("Open Menu");
@@ -25,6 +28,8 @@ mobileMenu.addEventListener("click", function () {
     removeClass(firstMenuBar, "span-0");
     removeClass(secondMenuBar, "add-span");
     removeClass(thirdMenuBar, "span-0");
+    mobileMenu.classList.add("right-position");
+    // mobileMenu.classList.add("display-block");
   } else {
     console.log("Close Menu");
     addClass(firstMenuBar, "span-0");
@@ -34,5 +39,6 @@ mobileMenu.addEventListener("click", function () {
     removeClass(firstMenuBar, "rotate-45");
     removeClass(secondMenuBar, "remove-span");
     removeClass(thirdMenuBar, "rotate-135");
+    mobileMenu.classList.remove("right-position");
   }
 });

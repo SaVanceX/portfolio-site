@@ -13,6 +13,7 @@ body header {
   z-index: 12;
   width: 100%;
   top: 0;
+  height: 10vh;
 }
 body header nav {
   background-color: blueviolet;
@@ -85,7 +86,16 @@ body .mobile-menu {
   background: antiquewhite;
   z-index: 20;
   position: fixed;
-  top: 10vh;
+  right: -113px;
+  width: 0px;
+  top: 8vh;
+  transition: right 0.5s ease-out 0.5s, width 0.5s ease-out 0.5s;
+}
+body .right-position {
+  right: 0;
+  width: 100px;
+  top: 8vh;
+  transition: right 0.5s ease-in 0.5s, width 0.5s ease-in 0.5s;
 }
 body #about {
   height: 100vh;

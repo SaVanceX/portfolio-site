@@ -59,6 +59,7 @@ body {
     z-index: 12;
     width: 100%;
     top: 0;
+    height: 10vh;
 
     nav {
       background-color: blueviolet;
@@ -138,12 +139,19 @@ body {
     background: antiquewhite;
     z-index: 20;
     position: fixed;
-    top: 10vh;
+    right: -113px;
+    width: 0px;
+    top: 8vh;
+    transition: right 0.5s ease-out 0.5s, width 0.5s ease-out 0.5s;
+    // opacity: 0;
   }
 
-  // .display-none {
-  //   display: none;
-  // }
+  .right-position {
+    right: 0;
+    width: 100px;
+    top: 8vh;
+    transition: right 0.5s ease-in 0.5s, width 0.5s ease-in 0.5s;
+  }
 
   #about {
     height: 100vh;
