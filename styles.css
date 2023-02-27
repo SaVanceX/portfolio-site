@@ -83,19 +83,27 @@ body header nav .rotate-135 {
   margin-bottom: 0;
 }
 body .mobile-menu {
-  background: antiquewhite;
+  background-color: blueviolet;
   z-index: 20;
   position: fixed;
   right: -113px;
   width: 0px;
+  height: 200px;
+  padding: 30px;
   top: 8vh;
   transition: right 0.5s ease-out 0.5s, width 0.5s ease-out 0.5s;
+  display: flex;
+  flex-direction: column;
 }
 body .right-position {
   right: 0;
   width: 100px;
+  height: 200px;
+  padding: 30px;
   top: 8vh;
   transition: right 0.5s ease-in 0.5s, width 0.5s ease-in 0.5s;
+  display: flex;
+  flex-direction: column;
 }
 body #about {
   height: 100vh;

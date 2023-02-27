@@ -29,7 +29,6 @@ hamburgerMenu.addEventListener("click", function () {
     removeClass(secondMenuBar, "add-span");
     removeClass(thirdMenuBar, "span-0");
     mobileMenu.classList.add("right-position");
-    // mobileMenu.classList.add("display-block");
   } else {
     console.log("Close Menu");
     addClass(firstMenuBar, "span-0");
