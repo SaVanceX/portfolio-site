@@ -111,24 +111,24 @@ body {
         }
         .add-span {
           opacity: 1;
-          transition: opacity 0.3s ease-in 0.1s;
+          transition: opacity 0.5s ease-in 0.5s;
         }
       }
 
       .rotate-45 {
-        transform: translate(10px, 9px) rotate(45deg);
+        transform: translate(3px, 8px) rotate(45deg);
         transition: transform 0.3s ease 0.5s;
         margin-bottom: 0;
       }
 
       .span-0 {
         transform: rotate(0deg);
-        transition: transform 0.3s ease 0.5s;
         margin-bottom: 5px;
+        transition: transform 0.5s ease 0.5s, margin-bottom 0.3s ease 0.5s;
       }
 
       .rotate-135 {
-        transform: translate(10px, -3px) rotate(135deg);
+        transform: translate(3px, -5px) rotate(135deg);
         transition: transform 0.3s ease 0.5s;
         margin-bottom: 0;
       }
