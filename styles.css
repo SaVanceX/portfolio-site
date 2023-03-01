@@ -4,6 +4,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+body .sub-heading {
+  font-size: 20px;
 }
 body header {
   background-color: rgb(51, 178, 167);
@@ -116,6 +120,10 @@ body #about .about-container {
   width: 600px;
   height: 600px;
   border: solid 1px white;
+  padding: 20px;
+}
+body #about .about-container p {
+  line-height: 25px;
 }
 body #experience {
   display: flex;
