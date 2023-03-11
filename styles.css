@@ -3,11 +3,36 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-body .sub-heading {
-  font-size: 20px;
+body h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+body h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+body h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+body p {
+  font-size: 1.4rem;
+}
+body ul li {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+body hr {
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+  height: 10px;
+  border-style: none;
+  background: aqua;
 }
 body header {
   background-color: rgb(51, 178, 167);
@@ -110,7 +135,7 @@ body .right-position {
   flex-direction: column;
 }
 body #about {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,12 +149,20 @@ body #about .about-container {
 }
 body #about .about-container p {
   line-height: 25px;
+  font-size: 17px;
 }
 body #experience {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: solid 1px white;
+}
+body #experience .experience-container {
+  border: solid 1px white;
+  padding: 10px;
+}
+body #experience .experience-container .job-description li {
+  margin-bottom: 10px;
 }
 body #projects {
   height: 100vh;
