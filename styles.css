@@ -164,9 +164,6 @@ body #experience .experience-container {
 body #experience .experience-container .job-description li {
   margin-bottom: 10px;
 }
-body .projects {
-  height: 100vh;
-}
 body .projects ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -190,7 +187,4 @@ body .projects ul li figure figcaption {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-}
-body #contact {
-  height: 100vh;
 }/*# sourceMappingURL=styles.css.map */
