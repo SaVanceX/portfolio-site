@@ -164,21 +164,32 @@ body #experience .experience-container {
 body #experience .experience-container .job-description li {
   margin-bottom: 10px;
 }
-body #projects {
+body .projects {
   height: 100vh;
 }
-body #projects .project-box-container {
-  border: 1px solid white;
+body .projects ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
-  padding: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0;
 }
-body #projects .project-box-container .project-box {
-  width: 200px;
-  height: 200px;
-  background-color: rgb(37, 208, 21);
+body .projects ul li {
+  border: 1px solid #e2e2e2;
+}
+body .projects ul li figure {
+  max-height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+body .projects ul li figure img {
+  width: 100%;
+}
+body .projects ul li figure figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
 }
 body #contact {
   height: 100vh;

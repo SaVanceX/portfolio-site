@@ -233,23 +233,50 @@ body {
     }
   }
 
-  #projects {
+  .projects {
     height: 100vh;
 
-    .project-box-container {
-      border: 1px solid white;
+    ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 20px;
-      padding: 20px;
-      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 10px;
+      list-style: none;
+      padding: 0;
 
-      .project-box {
-        width: 200px;
-        height: 200px;
-        background-color: rgb(37, 208, 21);
+      li {
+        border: 1px solid #e2e2e2;
+
+        figure {
+          max-height: 220px;
+          overflow: hidden;
+          position: relative;
+          img {
+            width: 100%;
+          }
+
+          figcaption {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+          }
+        }
       }
     }
+
+    // .project-box-container {
+    //   border: 1px solid white;
+    //   display: grid;
+    //   // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    //   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    //   row-gap: 20px;
+    //   align-items: center;
+    //   .project-box {
+    //     width: 200px;
+    //     height: 200px;
+    //     background-color: rgb(37, 208, 21);
+    //   }
+    // }
   }
 
   #contact {
