@@ -144,6 +144,7 @@ body #about {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
   border-bottom: solid 1px white;
 }
 body #about .about-container {
@@ -161,6 +162,7 @@ body #experience {
   flex-direction: column;
   align-items: center;
   border-bottom: solid 1px white;
+  padding-top: 10vh;
 }
 @media (min-width: 768px) {
   body #experience {
@@ -177,6 +179,9 @@ body #experience .experience-container {
 }
 body #experience .experience-container .job-description li {
   margin-bottom: 10px;
+}
+body .projects {
+  padding-top: 10vh;
 }
 body .projects ul {
   display: grid;
@@ -201,4 +206,8 @@ body .projects ul li figure figcaption {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
+}
+body #contact {
+  padding-top: 10vh;
+  height: 30vh;
 }/*# sourceMappingURL=styles.css.map */

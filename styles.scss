@@ -206,6 +206,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
     .about-container {
       width: 600px;
       height: 600px;
@@ -226,6 +227,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-bottom: solid 1px white;
+    padding-top: 10vh;
 
     @include md {
       width: 800px;
@@ -246,6 +248,7 @@ body {
   }
 
   .projects {
+    padding-top: 10vh;
     ul {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -275,9 +278,8 @@ body {
     }
   }
 
-  // #contact {
-  //   height: 100vh;
-  // }
+  #contact {
+    padding-top: 10vh;
+    height: 30vh;
+  }
 }
-
-// Breakpoints
