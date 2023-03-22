@@ -44,6 +44,9 @@ $screen-xl-min: 1200px;
     @content;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: rgb(66, 66, 66);
